@@ -1,0 +1,618 @@
+/* ==========================================
+   1. ABOUT PAGE HERO
+========================================== */
+
+.about-page {
+  width: 100%;
+  background: #ffffff;
+  color: #102b47;
+}
+
+.about-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 650px;
+  padding: 30px 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(5, 29, 51, 0.88), rgba(5, 29, 51, 0.58)),
+    url("/images/About_images/about-hero.jpg") center 48% / cover no-repeat;
+  color: #ffffff;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-eyebrow {
+  margin: 0 0 24px;
+  color: #8dc9f3;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.about-hero h1 {
+  max-width: 1200px;
+  margin: 0 0 24px;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+}
+
+.about-hero-description {
+  max-width: 1000px;
+  margin: 0;
+  color: #bdbec0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   2. COMPANY INTRODUCTION
+========================================== */
+
+.about-introduction {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 100px;
+  align-items: start;
+  width: 100%;
+  min-height: 400px;
+  padding: 75px 24px 80px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.about-intro-heading h2 {
+  max-width: 380px;
+  margin: 0;
+  color: #102b47;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+}
+
+.about-intro-heading h2 span {
+  color: #2878bd;
+  font-weight: 600;
+}
+
+.about-intro-description {
+  max-width: 500px;
+  padding-top: 0;
+}
+
+.about-intro-description p {
+  margin: 0 0 22px;
+  color: #74869a;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.95;
+  text-align: left;
+}
+
+/* ==========================================
+   3. MISSION AND VISION
+========================================== */
+
+.mission-vision-section {
+  width: 100%;
+  padding: 81px 24px 80px;
+  box-sizing: border-box;
+  background: #edf4f9;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 17px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.mission-card,
+.vision-card {
+  position: relative;
+  width: 100%;
+  min-height: 373px;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.mission-card {
+  background: #ffffff;
+  border: 1px solid #dfe7ed;
+  color: #102b47;
+}
+
+.vision-card {
+  min-height: 353px;
+  background: #0b2744;
+  color: #ffffff;
+}
+
+.mission-card-top,
+.vision-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 65px;
+}
+
+.mission-label,
+.vision-label {
+  margin: 2px 0 0;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1.7px;
+}
+
+.mission-label {
+  color: #176bb0;
+}
+
+.vision-label {
+  color: #9bc9ed;
+}
+
+.mission-number,
+.vision-number {
+  margin-top: -7px;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.mission-number {
+  color: #e5ecf2;
+}
+
+.vision-number {
+  color: #153f6b;
+}
+
+.mission-card h2,
+.vision-card h2 {
+  margin: 4px 0 18px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.32;
+  letter-spacing: -0.55px;
+  text-align: left;
+}
+
+.mission-card h2 {
+  color: #102b47;
+}
+
+.vision-card h2 {
+  color: #ffffff;
+}
+
+.mission-description,
+.vision-description {
+  max-width: 450px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.mission-description {
+  color: #74869a;
+}
+
+.vision-description {
+  color: #aebfd0;
+}
+
+/* ==========================================
+   4. OUR EXPERTISE
+========================================== */
+
+.about-expertise {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  min-height: 620px;
+  padding: 70px 24px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.expertise-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  min-width: 0;
+}
+
+.expertise-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.expertise-year {
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  width: 160px;
+  height: 96px;
+  padding: 18px 20px;
+  box-sizing: border-box;
+  background: #2878bd;
+  color: #ffffff;
+}
+
+.expertise-year strong {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.expertise-year span {
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.expertise-content {
+  width: 100%;
+  max-width: 650px;
+}
+
+.expertise-eyebrow {
+  margin: 0 0 20px;
+  color: #176bb0;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  text-align: left;
+}
+
+.expertise-content h2 {
+  margin: 0 0 20px;
+  color: #102b47;
+  font-size: clamp(40px, 3vw, 40px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -1.2px;
+  text-align: left;
+}
+
+.expertise-description {
+  margin: 0 0 24px;
+  color: #74869a;
+  font-size: 18px;
+  line-height: 1.95;
+  text-align: left;
+}
+
+.expertise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.expertise-list li {
+  position: relative;
+  padding-left: 23px;
+  color: #425970;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.expertise-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2878bd;
+  font-size: 15px;
+}
+
+/* ==========================================
+   5. OUR COMMITMENT
+========================================== */
+
+.about-commitment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 366px;
+  padding: 55px 24px;
+  box-sizing: border-box;
+  background: #173f6b;
+  text-align: center;
+}
+
+.commitment-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.commitment-eyebrow {
+  margin: 0 0 15px;
+  color: #9bc9ed;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.commitment-content h2 {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: clamp(28px, 3.2vw, 30px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.9px;
+}
+
+.commitment-description {
+  max-width: 1050px;
+  margin: 0 auto 24px;
+  color: #c5d5e6;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.commitment-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-width: 130px;
+  min-height: 36px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background: #ffffff;
+  color: #12365d;
+  font-size: 9px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.commitment-button:hover {
+  background: #e8f1f9;
+}
+
+.commitment-arrow {
+  font-size: 14px;
+}
+
+/* ==========================================
+   6. TABLET RESPONSIVE STYLES
+========================================== */
+
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: 420px;
+    padding: 40px 22px;
+  }
+
+  .about-eyebrow {
+    font-size: 13px;
+  }
+
+  .about-hero h1 {
+    font-size: 42px;
+  }
+
+  .about-hero-description {
+    font-size: 16px;
+  }
+
+  .about-introduction {
+    column-gap: 30px;
+    padding: 45px 18px 55px;
+  }
+
+  .about-intro-heading h2 {
+    font-size: 25px;
+    line-height: 1.45;
+  }
+
+  .about-intro-description p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .mission-vision-section {
+    padding: 55px 18px;
+  }
+
+  .mission-vision-grid {
+    gap: 14px;
+  }
+
+  .mission-card,
+  .vision-card {
+    min-height: 350px;
+    padding: 28px 22px;
+  }
+
+  .mission-card h2,
+  .vision-card h2 {
+    font-size: 20px;
+  }
+
+  .mission-description,
+  .vision-description {
+    font-size: 11px;
+  }
+
+  .about-expertise {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 28px;
+    min-height: auto;
+    padding: 55px 20px;
+  }
+
+  .expertise-image-wrap {
+    height: 420px;
+  }
+
+  .expertise-content h2 {
+    font-size: 29px;
+  }
+
+  .expertise-description {
+    font-size: 12px;
+  }
+
+  .expertise-list {
+    gap: 12px;
+  }
+
+  .expertise-list li {
+    font-size: 11px;
+  }
+
+  .about-commitment {
+    min-height: 320px;
+    padding: 45px 20px;
+  }
+}
+
+/* ==========================================
+   7. MOBILE RESPONSIVE STYLES
+========================================== */
+
+@media (max-width: 520px) {
+  .about-hero {
+    min-height: 320px;
+    padding: 35px 20px;
+  }
+
+  .about-eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .about-hero h1 {
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .about-hero h1 br {
+    display: none;
+  }
+
+  .about-hero-description {
+    font-size: 13px;
+  }
+
+  .about-introduction {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+    padding: 38px 20px 45px;
+  }
+
+  .about-intro-heading h2 {
+    max-width: 100%;
+    font-size: 25px;
+  }
+
+  .about-intro-description {
+    max-width: 100%;
+  }
+
+  .about-intro-description p {
+    font-size: 13px;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .mission-card,
+  .vision-card {
+    min-height: 340px;
+    padding: 26px 22px;
+  }
+
+  .mission-number,
+  .vision-number {
+    font-size: 44px;
+  }
+
+  .mission-card h2,
+  .vision-card h2 {
+    font-size: 21px;
+  }
+
+  .about-expertise {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 40px 20px 55px;
+  }
+
+  .expertise-image-wrap {
+    height: 400px;
+    margin-bottom: 10px;
+  }
+
+  .expertise-content h2 {
+    font-size: 32px;
+  }
+
+  .expertise-description {
+    font-size: 13px;
+  }
+
+  .expertise-list li {
+    font-size: 12px;
+  }
+
+  .commitment-content h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .commitment-content h2 br {
+    display: none;
+  }
+
+  .commitment-description {
+    font-size: 12px;
+  }
+}
