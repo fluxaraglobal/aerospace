@@ -79,24 +79,28 @@
 .products-hero .products-eyebrow {
   color: #9bc9ed;
   margin-bottom: 22px;
+  font-size: large;
+  text-align: left;
 }
 
 .products-hero h1 {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 0 20px;
   color: #ffffff;
   font-size: clamp(36px, 4.4vw, 58px);
   font-weight: 500;
   line-height: 1.08;
   letter-spacing: -1.8px;
+  text-align: left;
 }
 
 .products-hero-description {
-  max-width: 650px;
+  max-width: 750px;
   margin: 0 0 28px;
   color: #d0dbe6;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.85;
+  text-align: left;
 }
 
 .products-primary-button {
@@ -245,26 +249,29 @@
 .capability-eyebrow {
   margin: 0 0 24px;
   color: #2878bd;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 2px;
+  text-align: left;
 }
 
 .capability-content h2 {
   margin: 0 0 28px;
   color: #102b47;
-  font-size: clamp(32px, 3.1vw, 46px);
+  font-size: clamp(37px, 3.1vw, 46px);
   font-weight: 500;
   line-height: 1.13;
   letter-spacing: -1.4px;
+  text-align: left;
 }
 
 .capability-description {
   max-width: 590px;
   margin: 0 0 32px;
   color: #74869a;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.95;
+  text-align: left;
 }
 
 .capability-steps {

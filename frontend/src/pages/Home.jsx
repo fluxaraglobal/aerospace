@@ -6,7 +6,7 @@ const clientLogos = Array.from({ length: 17 }, (_, index) => ({
 }));
 
 const highlights = [
-  "International manufacturer relationships",
+  "International manufacturer Collaboration",
   "Specialized equipment and precision systems",
   "India market and localization support",
   "Equipment lifecycle coordination",
@@ -249,7 +249,7 @@ function Home() {
                 <span className="industry-number">02</span>
                 <h3>Defence</h3>
                 <p>
-                  Technology, specifications and equipment support for critical
+                  Technology connections and equipment support for critical
                   defence requirements.
                 </p>
               </div>
@@ -316,7 +316,7 @@ function Home() {
           </div>
 
           <p className="clients-description">
-            International manufacturer relationships developed through decades
+            International manufacturer Collaboration developed through decades
             of technically focused market engagement.
           </p>
         </div>

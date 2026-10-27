@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: 450px;
+  min-height: 650px;
   padding: 75px 5%;
   background:
     linear-gradient(
@@ -35,7 +35,7 @@
       rgba(5, 29, 51, 0.82) 48%,
       rgba(5, 29, 51, 0.48) 100%
     ),
-    url("/images/Home_images/technical-advisory.jpg") center / cover no-repeat;
+    url("/images/contact_image/contact_hero.jpg") center / cover no-repeat;
   color: #ffffff;
 }
 
@@ -48,27 +48,30 @@
 .contact-eyebrow {
   margin: 0 0 24px;
   color: #78b8e7;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 2px;
+  text-align: left;
 }
 
 .contact-hero h1 {
   max-width: 1000px;
   margin: 0 0 22px;
   color: #ffffff;
-  font-size: clamp(38px, 4.2vw, 54px);
+  font-size: clamp(40px, 4.2vw, 54px);
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -1.8px;
+  text-align: left;
 }
 
 .contact-hero-description {
   max-width: 950px;
   margin: 0;
   color: #c5d4e2;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.85;
+  text-align: left;
 }
 
 /* =====================================

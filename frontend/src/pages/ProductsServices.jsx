@@ -3,7 +3,7 @@ import "../styles/ProductsServices.css";
 const expertiseCards = [
   {
     number: "01",
-    title: "Technical Advisory & Consulting",
+    title: "Engineering Advisory & Consulting",
     description:
       "Technical guidance to identify suitable technologies, evaluate requirements, and support engineering decisions.",
     image: "/images/Home_images/technical-advisory.jpg",
@@ -27,7 +27,7 @@ const expertiseCards = [
 const serviceItems = [
   {
     number: "01",
-    title: "Technical Advisory & Consulting",
+    title: "Engineering Advisory & Consulting",
     description:
       "Understanding technical requirements and identifying suitable engineering technologies for industrial applications.",
     image: "/images/Home_images/technical-advisory.jpg",
@@ -125,7 +125,7 @@ const serviceDetails = [
   {
     number: "01",
     label: "SERVICE 01",
-    title: "Technical Advisory & Consulting",
+    title: "Engineering Advisory & Consulting",
     image: "/images/Home_images/technical-advisory.jpg",
     icon: "◎",
     description:
@@ -253,9 +253,7 @@ function ProductsServices() {
       {/* 1. HERO */}
       <section className="products-hero">
         <div className="products-hero-content">
-          <p className="products-eyebrow">
-            AEROSPACE INTERNATIONAL INCORPORATED
-          </p>
+          <p className="products-eyebrow">PRODUCTS AND SERVICES</p>
 
           <h1>
             Comprehensive Engineering &amp; Industrial
@@ -264,13 +262,10 @@ function ProductsServices() {
           </h1>
 
           <p className="products-hero-description">
-            Connecting global technologies with India's critical engineering and
-            industrial requirements.
+            Engineering Advisory, international Collaboration, specialized
+            equipment supply, localization support, installation, commissioning,
+            and dependable after-scales coordination
           </p>
-
-          <a href="/contact" className="products-primary-button">
-            Discuss Your Requirements <span>→</span>
-          </a>
         </div>
       </section>
 
@@ -344,7 +339,7 @@ function ProductsServices() {
           </div>
 
           <div className="lifecycle-grid">
-            {/* 01 — Technical Advisory */}
+            {/* 01 — Engineering Advisory */}
             <article className="lifecycle-card">
               <div className="lifecycle-image">
                 <img
@@ -355,7 +350,7 @@ function ProductsServices() {
               </div>
               <div className="lifecycle-card-body">
                 <span className="lifecycle-icon">◎</span>
-                <h3>Technical Advisory &amp; Consulting</h3>
+                <h3>Engineering Advisory &amp; Consulting</h3>
                 <p>
                   Technical specification assessment, technology evaluation,
                   equipment selection, and application-specific engineering
@@ -731,7 +726,7 @@ function ProductsServices() {
 
               <div className="why-choose-card">
                 <span className="why-choose-icon">↗</span>
-                <p>International manufacturer relationships</p>
+                <p>International manufacturer Collaboration</p>
               </div>
 
               <div className="why-choose-card">

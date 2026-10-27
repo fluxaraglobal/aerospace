@@ -329,9 +329,10 @@
 .section-eyebrow {
   margin-bottom: 18px;
   color: #2478b9;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 2.5px;
+  text-align: left;
 }
 
 .deliver-content h2 {
@@ -444,14 +445,15 @@
   font-weight: 500;
   letter-spacing: -1.2px;
   line-height: 1.2;
+  text-align: left;
 }
 
 .capabilities-intro {
-  max-width: 640px;
   margin: 0;
   color: #75849a;
   font-size: 14px;
   line-height: 1.8;
+  text-align: left;
 }
 
 .capabilities-grid {
@@ -626,10 +628,11 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -1px;
+  text-align: left;
 }
 
 .industries-heading > p:last-child {
-  max-width: 680px;
+  text-align: left;
   margin: 0;
   color: #75849a;
   font-size: 14px;
@@ -694,6 +697,7 @@
   align-items: flex-start;
   padding: 24px;
   color: #ffffff;
+  text-align: left;
 
   background: linear-gradient(
     to top,
