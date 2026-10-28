@@ -39,7 +39,7 @@
 .footer-office p {
   margin: 0;
   color: #8da1b5;
-  font-size: 11px;
+  font-size: 20px;
   line-height: 1.85;
 }
 
@@ -63,7 +63,7 @@
 .footer-contact a {
   margin-bottom: 12px;
   color: #8da1b5;
-  font-size: 11px;
+  font-size: 20px;
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -105,7 +105,7 @@
 .footer-bottom p {
   margin: 0;
   color: #617b94;
-  font-size: 9px;
+  font-size: 11px;
 }
 
 /* Tablet */
@@ -153,4 +153,42 @@
     gap: 8px;
     padding: 16px 0;
   }
+}
+
+.copyright-bar {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  border-top: 1px solid #333;
+}
+
+.copyright-bar p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.copyright-bar strong {
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .copyright-bar p {
+    font-size: 12px;
+  }
+}
+
+.copyright-link {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright-link:hover {
+  text-decoration: underline;
 }

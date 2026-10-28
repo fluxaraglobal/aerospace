@@ -410,3 +410,53 @@
     width: 100%;
   }
 }
+
+.contact-office-card {
+  background: #0b2742;
+  color: #fff;
+  padding: 50px;
+}
+
+.office-detail {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+
+.office-icon {
+  color: #76bde9;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.office-icon svg {
+  width: 35px;
+  height: 35px;
+  stroke-width: 1.8;
+}
+
+.office-detail h3 {
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #8da8bf;
+  margin: 0 0 12px;
+}
+
+.office-detail p,
+.office-detail a {
+  color: #d1deea;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.office-detail a {
+  display: block;
+  text-decoration: none;
+}
+
+.office-detail a:hover {
+  color: #76bde9;
+}

@@ -50,11 +50,29 @@ function Footer() {
 
       {/* Bottom footer bar */}
       <div className="footer-bottom">
-        <p>© 2026 Aerospace International Incorporated.</p>
+        <p>
+          COPYRIGHT © 2026 AEROSPACE INTERNATIONAL. ALL RIGHTS RESERVED.
+          Designed by{" "}
+          <a
+            href="https://codentixtech.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="copyright-link"
+          >
+            Codentix Tech LLP
+          </a>
+        </p>
         <p>Established 1989 · Bangalore, India</p>
       </div>
     </footer>
   );
+
+  <div className="copyright-bar">
+    <p>
+      COPYRIGHT © 2026 AEROSPACE INTERNATIONAL. ALL RIGHTS RESERVED. Designed
+      and Developed by <strong>Codentix Tech LLP</strong>
+    </p>
+  </div>;
 }
 
 export default Footer;

@@ -171,7 +171,7 @@ const serviceDetails = [
     number: "04",
     label: "SERVICE 04",
     title: "Equipment Supply",
-    image: "/images/Products_images/product_hero.jpg",
+    image: "/images/products_images/product_hero.jpg",
     icon: "⬡",
     description:
       "Our equipment supply work is grounded in matching verified technical requirements with specialized solutions from international manufacturers.",
@@ -186,7 +186,7 @@ const serviceDetails = [
     number: "05",
     label: "SERVICE 05",
     title: "Installation & Commissioning",
-    image: "/images/Products_images/installation-commissioning.jpg",
+    image: "/images/products_images/installation-commissioning.jpg",
     icon: "↗",
     description:
       "We help coordinate the people, information, and manufacturer involvement required to take supplied equipment toward operational readiness.",
@@ -201,7 +201,7 @@ const serviceDetails = [
     number: "06",
     label: "SERVICE 06",
     title: "After-Sales Service",
-    image: "/images/Products_images/after-sales-service.jpg",
+    image: "/images/products_images/after-sales-service.jpg",
     icon: "♧",
     description:
       "Our role continues beyond equipment supply through dependable communication and coordination for technical and maintenance-related requirements.",
@@ -311,7 +311,7 @@ function ProductsServices() {
         <div className="capability-visual">
           <img
             className="capability-image"
-            src="/images/Products_images/technical-equipment.jpg"
+            src="/images/products_images/product_hero.jpg"
             alt="Precision industrial equipment"
           />
 
@@ -412,7 +412,7 @@ function ProductsServices() {
             <article className="lifecycle-card">
               <div className="lifecycle-image">
                 <img
-                  src="/images/Products_images/product_hero.jpg"
+                  src="/images/products_images/product_hero.jpg"
                   alt="Precision industrial equipment"
                 />
                 <span className="lifecycle-number">04</span>
@@ -435,7 +435,7 @@ function ProductsServices() {
             <article className="lifecycle-card">
               <div className="lifecycle-image">
                 <img
-                  src="/images/Products_images/installation-commissioning.jpg"
+                  src="/images/products_images/installation-commissioning.jpg"
                   alt="Industrial equipment installation"
                 />
                 <span className="lifecycle-number">05</span>
@@ -458,7 +458,7 @@ function ProductsServices() {
             <article className="lifecycle-card">
               <div className="lifecycle-image">
                 <img
-                  src="/images/Products_images/after-sales-service.jpg"
+                  src="/images/products_images/after-sales-service.jpg"
                   alt="Industrial machinery and technical support"
                 />
                 <span className="lifecycle-number">06</span>
@@ -634,49 +634,49 @@ function ProductsServices() {
               "01",
               "FLEXCAM FZE",
               "ORCA 3553 – 3 Axis CNC Routing Machine",
-              "/images/Products_images/orca-3553.jpg",
+              "/images/products_images/orca-3553.jpg",
             ],
             [
               "02",
               "MANUFACTURING TECHNOLOGY, INC.",
               "Friction Stir Welding Machine",
-              "/images/Products_images/friction-stir-welding.jpg",
+              "/images/products_images/friction-stir-welding.jpg",
             ],
             [
               "03",
               "SURFACE ENGINEERING",
               "4 Head Belt Grinding Machine – STX 4 Units",
-              "/images/Products_images/stx-4.jpg",
+              "/images/products_images/stx-4.jpg",
             ],
             [
               "04",
               "TECHNO AUTOMATION",
               "LUT Wall Thickness Gauge",
-              "/images/Products_images/lut-wall-thickness-gauge.jpg",
+              "/images/products_images/lut-wall-thickness-gauge.jpg",
             ],
             [
               "05",
               "SURFACE ENGINEERING",
               "6 Head Belt Grinding Machine – STX 6 Units",
-              "/images/Products_images/stx-6.jpg",
+              "/images/products_images/stx-6.jpg",
             ],
             [
               "06",
               "CNC MACHINING",
               "Aero Engine Blade Milling Machine",
-              "/images/Products_images/aero-engine-blade-milling.jpg",
+              "/images/products_images/aero-engine-blade-milling.jpg",
             ],
             [
               "07",
               "INTERO ROBOTICS",
               "10kW Fiber Laser Hybrid System & GMAW Base",
-              "/images/Products_images/fiber-laser-hybrid.jpg",
+              "/images/products_images/fiber-laser-hybrid.jpg",
             ],
             [
               "08",
               "OXFORD APPLIED RESEARCH",
               "Atomic Oxygen Beam Source – TC 50",
-              "/images/Products_images/atomic-oxygen-beam.jpg",
+              "/images/products_images/atomic-oxygen-beam.jpg",
             ],
           ].map(([number, manufacturer, name, image]) => (
             <article className="equipment-card" key={number}>

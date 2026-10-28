@@ -1,9 +1,38 @@
 import "../styles/Contact.css";
+import { MapPin, Phone, UserRound } from "lucide-react";
 
 function Contact() {
   function handleSubmit(event) {
     event.preventDefault();
-    alert("Your enquiry form is ready to be connected to an email service.");
+
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
+    const fullName = data.get("fullName");
+    const companyName = data.get("companyName") || "Not provided";
+    const email = data.get("email");
+    const phone = data.get("phone") || "Not provided";
+    const interest = data.get("interest");
+    const message = data.get("message");
+
+    const subject = encodeURIComponent(`Website Enquiry - ${fullName}`);
+
+    const body = encodeURIComponent(
+      `New enquiry from Aerospace International website\n\n` +
+        `Full Name: ${fullName}\n` +
+        `Company: ${companyName}\n` +
+        `Email: ${email}\n` +
+        `Phone: ${phone}\n` +
+        `Area of Interest: ${interest}\n\n` +
+        `Message:\n${message}`,
+    );
+
+    const gmailUrl =
+      `https://mail.google.com/mail/?view=cm&fs=1` +
+      `&to=snehapriya1801@gmail.com` +
+      `&su=${subject}&body=${body}`;
+
+    window.open(gmailUrl, "_blank");
   }
 
   return (
@@ -139,7 +168,7 @@ function Contact() {
 
           <div className="office-detail">
             <span className="office-icon" aria-hidden="true">
-              ⌖
+              <MapPin />
             </span>
             <div>
               <h3>ADDRESS</h3>
@@ -157,7 +186,7 @@ function Contact() {
 
           <div className="office-detail">
             <span className="office-icon" aria-hidden="true">
-              ♧
+              <Phone />
             </span>
             <div>
               <h3>PHONE</h3>
@@ -168,7 +197,7 @@ function Contact() {
 
           <div className="office-detail">
             <span className="office-icon" aria-hidden="true">
-              ♙
+              <UserRound />
             </span>
             <div>
               <h3>CONTACT PERSON</h3>

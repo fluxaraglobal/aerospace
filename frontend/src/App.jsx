@@ -9,6 +9,8 @@ import About from "./pages/About";
 import ProductsServices from "./pages/ProductsServices";
 import Contact from "./pages/Contact";
 
+import FloatingContact from "./components/FloatingContact";
+
 import "./styles/global.css";
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <Route path="/products-services" element={<ProductsServices />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      <FloatingContact />
 
       <Footer />
     </BrowserRouter>
