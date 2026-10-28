@@ -1,4 +1,11 @@
 import "../styles/Home.css";
+import { Link } from "react-router-dom";
+
+const startingYear = 2026;
+const startingExperience = 35;
+
+const currentExperience =
+  startingExperience + (new Date().getFullYear() - startingYear);
 
 const clientLogos = Array.from({ length: 17 }, (_, index) => ({
   name: `Company ${index + 1}`,
@@ -39,13 +46,13 @@ function Home() {
               Explore Our Services <span>→</span>
             </a>
 
-            <a href="/contact" className="hero-button secondary">
+            <Link to="/contact" className="hero-button secondary">
               Contact Our Team <span>→</span>
-            </a>
+            </Link>
           </div>
 
           <div className="hero-experience">
-            <strong>35+</strong>
+            <strong>{currentExperience}+</strong>
             <span>
               YEARS CONNECTING
               <br />
@@ -106,9 +113,9 @@ function Home() {
               commissioning, and after-sales service.
             </p>
 
-            <a href="/about" className="deliver-link">
+            <Link to="/about" className="deliver-link">
               Discover our company <span>→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -147,9 +154,9 @@ function Home() {
                   equipment selection, and application-specific engineering
                   solutions.
                 </p>
-                <a href="/products-services" className="capability-link">
+                <Link to="/products-services" className="capability-link">
                   Explore service <span>→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
@@ -172,9 +179,9 @@ function Home() {
                   localization options, local-content requirements, and
                   potential Indian manufacturing partnerships.
                 </p>
-                <a href="/products-services" className="capability-link">
+                <Link to="/products-services" className="capability-link">
                   Explore service <span>→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
@@ -197,17 +204,17 @@ function Home() {
                   customers, research institutions, and technical organizations
                   while supporting business development.
                 </p>
-                <a href="/products-services" className="capability-link">
+                <Link to="/products-services" className="capability-link">
                   Explore service <span>→</span>
-                </a>
+                </Link>
               </div>
             </article>
           </div>
 
           <div className="capabilities-action">
-            <a href="/products-services" className="capabilities-button">
+            <Link to="/products-services" className="capabilities-button">
               View All Products &amp; Services <span>→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -349,10 +356,10 @@ function Home() {
           </p>
         </div>
 
-        <a href="/contact" className="conversation-button">
+        <Link to="/contact" className="conversation-button">
           <span>Discuss Your Requirements</span>
           <span className="conversation-arrow">→</span>
-        </a>
+        </Link>
       </section>
     </main>
   );

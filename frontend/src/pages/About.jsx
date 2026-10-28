@@ -1,4 +1,5 @@
 import "../styles/About.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function About() {
   return (
@@ -161,10 +162,18 @@ function About() {
             Indian market.
           </p>
 
-          <a href="/contact" className="commitment-button">
+          <Link
+            to="/contact"
+            className="commitment-button"
+            onClick={() => {
+              setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }, 100);
+            }}
+          >
             <span>Contact Our Team</span>
             <span className="commitment-arrow">→</span>
-          </a>
+          </Link>
         </div>
       </section>
     </main>

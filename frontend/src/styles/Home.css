@@ -641,45 +641,49 @@
 
 /* Image grid */
 
+/* Industry cards layout */
 .industries-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-}
-
-/* All industry cards */
-
-.industry-card {
-  position: relative;
-  min-width: 0;
-  height: 240px;
-  overflow: hidden;
-  background: #102d4d;
+  gap: 14px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
 /* Large Aerospace card */
-
 .industry-aerospace {
   grid-column: 1 / -1;
-  height: 980px;
+  width: 100%;
+  height: 150px;
 }
 
-/* Four smaller cards: nearly square */
-
+/* Four smaller cards */
 .industry-card:not(.industry-aerospace) {
-  height: auto;
-  aspect-ratio: 1.15 / 1;
+  width: 100%;
+  height: 150px;
+  min-width: 0;
+  aspect-ratio: auto;
 }
 
-/* Images */
-
+/* Image fills each card */
 .industry-card img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.5s ease;
+}
+
+.industries-section .industry-aerospace {
+  height: 400px !important;
+  min-height: 0 !important;
+}
+
+.industries-section .industry-card:not(.industry-aerospace) {
+  height: 300px !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
 }
 
 .industry-card:hover img {

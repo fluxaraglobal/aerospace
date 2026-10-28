@@ -258,3 +258,167 @@
     font-size: 11px;
   }
 }
+
+/* Products & Services dropdown */
+.nav-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-dropdown-top {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-dropdown-page-link {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-dropdown-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #245a84;
+  cursor: pointer;
+}
+
+.nav-dropdown-arrow:hover {
+  background: #f2eade;
+}
+
+.dropdown-chevron {
+  transition: transform 0.2s ease;
+}
+
+.dropdown-chevron.rotated {
+  transform: rotate(180deg);
+}
+
+/* White and beige dropdown panel */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 220px 310px;
+  width: 530px;
+  padding: 14px 0;
+  background: #fffdf9;
+  border-top: 3px solid #2878b5;
+  box-shadow: 0 12px 30px rgba(35, 49, 62, 0.14);
+}
+
+.dropdown-column {
+  min-width: 0;
+  padding: 4px 16px;
+}
+
+.dropdown-column + .dropdown-column {
+  border-left: 1px solid #e8dfd2;
+}
+
+.dropdown-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #173b5b;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-heading svg {
+  color: #2878b5;
+  flex-shrink: 0;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #34485b;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown-item:hover,
+.dropdown-heading:hover {
+  background: #f3ecdf;
+  color: #1d6da6;
+}
+
+/* Prevent sections from hiding behind a sticky header */
+#products,
+#services,
+.lifecycle-card[id] {
+  scroll-margin-top: 140px;
+}
+
+/* Medium desktop screens */
+@media (max-width: 1100px) and (min-width: 901px) {
+  .dropdown-menu {
+    grid-template-columns: 200px 280px;
+    width: 480px;
+  }
+}
+
+/* Mobile navigation */
+@media (max-width: 900px) {
+  .nav-dropdown {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-dropdown-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 6px 0;
+    box-shadow: none;
+    border-top: 1px solid #e8dfd2;
+  }
+
+  .dropdown-column {
+    padding: 4px 10px;
+  }
+
+  .dropdown-column + .dropdown-column {
+    border-left: none;
+    border-top: 1px solid #e8dfd2;
+  }
+}

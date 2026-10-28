@@ -1,4 +1,5 @@
 import "../styles/ProductsServices.css";
+import { Link } from "react-router-dom";
 
 const expertiseCards = [
   {
@@ -240,9 +241,17 @@ function ServiceContent({ service }) {
         ))}
       </ul>
 
-      <a href="/contact" className="service-detail-button">
+      <Link
+        to="/contact"
+        className="service-detail-button"
+        onClick={() => {
+          setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }, 100);
+        }}
+      >
         Discuss This Service <span>→</span>
-      </a>
+      </Link>
     </div>
   );
 }
@@ -340,7 +349,7 @@ function ProductsServices() {
 
           <div className="lifecycle-grid">
             {/* 01 — Engineering Advisory */}
-            <article className="lifecycle-card">
+            <article className="lifecycle-card" id="engineering-advisory">
               <div className="lifecycle-image">
                 <img
                   src="/images/Home_images/technical-advisory.jpg"
@@ -356,14 +365,22 @@ function ProductsServices() {
                   equipment selection, and application-specific engineering
                   solutions.
                 </p>
-                <a href="/contact" className="lifecycle-link">
+                <Link
+                  to="/contact"
+                  className="lifecycle-link"
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }, 100);
+                  }}
+                >
                   Learn More <span>→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
             {/* 02 — Make in India */}
-            <article className="lifecycle-card">
+            <article className="lifecycle-card" id="make-in-india">
               <div className="lifecycle-image">
                 <img
                   src="/images/products_images/make-in-india.jpg"
@@ -379,14 +396,22 @@ function ProductsServices() {
                   localization options, local-content requirements, and
                   potential Indian manufacturing partnerships.
                 </p>
-                <a href="/contact" className="lifecycle-link">
+                <Link
+                  to="/contact"
+                  className="lifecycle-link"
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }, 100);
+                  }}
+                >
                   Learn More <span>→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
             {/* 03 — OEM Representation */}
-            <article className="lifecycle-card">
+            <article className="lifecycle-card" id="oem-representation">
               <div className="lifecycle-image">
                 <img
                   src="/images/Home_images/oem-representation.jpg"
@@ -402,14 +427,22 @@ function ProductsServices() {
                   customers, research institutions, and technical organizations
                   while supporting business development.
                 </p>
-                <a href="/contact" className="lifecycle-link">
+                <Link
+                  to="/contact"
+                  className="lifecycle-link"
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }, 100);
+                  }}
+                >
                   Learn More <span>→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
             {/* 04 — Equipment Supply */}
-            <article className="lifecycle-card">
+            <article className="lifecycle-card" id="equipment-supply">
               <div className="lifecycle-image">
                 <img
                   src="/images/products_images/product_hero.jpg"
@@ -425,14 +458,22 @@ function ProductsServices() {
                   instruments, specialized equipment, components, and spares
                   from international manufacturers.
                 </p>
-                <a href="/contact" className="lifecycle-link">
+                <Link
+                  to="/contact"
+                  className="lifecycle-link"
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }, 100);
+                  }}
+                >
                   Learn More <span>→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
             {/* 05 — Installation */}
-            <article className="lifecycle-card">
+            <article className="lifecycle-card" id="installation-commissioning">
               <div className="lifecycle-image">
                 <img
                   src="/images/products_images/installation-commissioning.jpg"
@@ -448,14 +489,22 @@ function ProductsServices() {
                   operational readiness with manufacturers and technical
                   specialists.
                 </p>
-                <a href="/contact" className="lifecycle-link">
+                <Link
+                  to="/contact"
+                  className="lifecycle-link"
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }, 100);
+                  }}
+                >
                   Learn More <span>→</span>
-                </a>
+                </Link>
               </div>
             </article>
 
             {/* 06 — After-Sales Service */}
-            <article className="lifecycle-card">
+            <article className="lifecycle-card" id="after-sales-service">
               <div className="lifecycle-image">
                 <img
                   src="/images/products_images/after-sales-service.jpg"
@@ -471,9 +520,17 @@ function ProductsServices() {
                   maintenance-related assistance throughout the equipment
                   lifecycle.
                 </p>
-                <a href="/contact" className="lifecycle-link">
+                <Link
+                  to="/contact"
+                  className="lifecycle-link"
+                  onClick={() => {
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }, 100);
+                  }}
+                >
                   Learn More <span>→</span>
-                </a>
+                </Link>
               </div>
             </article>
           </div>
@@ -606,7 +663,7 @@ function ProductsServices() {
         </div>
       </section>
 
-      <section className="equipment-section">
+      <section className="equipment-section" id="products">
         <div className="equipment-intro">
           <div className="equipment-heading">
             <p className="equipment-eyebrow">PRODUCTS &amp; EQUIPMENT</p>
@@ -771,10 +828,14 @@ function ProductsServices() {
           </p>
         </div>
 
-        <a href="/contact" className="engineering-cta-button">
+        <Link
+          to="/contact"
+          className="engineering-cta-button"
+          onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
+        >
           <span>Discuss Your Requirements</span>
           <span className="engineering-cta-arrow">→</span>
-        </a>
+        </Link>
       </section>
     </main>
   );

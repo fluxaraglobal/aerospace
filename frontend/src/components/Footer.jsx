@@ -1,6 +1,16 @@
 import "../styles/Footer.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+
+  function goToPage(path) {
+    navigate(path);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <footer className="site-footer">
       <div className="footer-main">
@@ -23,16 +33,46 @@ function Footer() {
         {/* Navigation links */}
         <div className="footer-navigation">
           <h3>NAVIGATION</h3>
-          <a href="/">Home</a>
-          <a href="/about">About Us</a>
-          <a href="/products-services">Products &amp; Services</a>
-          <a href="/contact">Contact Us</a>
 
-          <div className="footer-contact">
-            <h3>CONTACT</h3>
-            <a href="tel:+918023186616">+91 80 23186616</a>
-            <a href="tel:+918023186579">+91 80 23186579</a>
-          </div>
+          <Link
+            to="/"
+            onClick={(e) => {
+              e.preventDefault();
+              goToPage("/");
+            }}
+          >
+            Home
+          </Link>
+
+          <Link
+            to="/about"
+            onClick={(e) => {
+              e.preventDefault();
+              goToPage("/about");
+            }}
+          >
+            About Us
+          </Link>
+
+          <Link
+            to="/products-services"
+            onClick={(e) => {
+              e.preventDefault();
+              goToPage("/products-services");
+            }}
+          >
+            Products &amp; Services
+          </Link>
+
+          <Link
+            to="/contact"
+            onClick={(e) => {
+              e.preventDefault();
+              goToPage("/contact");
+            }}
+          >
+            Contact Us
+          </Link>
         </div>
 
         {/* Head office address */}

@@ -29,7 +29,7 @@ function Contact() {
 
     const gmailUrl =
       `https://mail.google.com/mail/?view=cm&fs=1` +
-      `&to=snehapriya1801@gmail.com` +
+      `&to=sales@aerospace.co.in` +
       `&su=${subject}&body=${body}`;
 
     window.open(gmailUrl, "_blank");
@@ -192,17 +192,6 @@ function Contact() {
               <h3>PHONE</h3>
               <a href="tel:+918023186616">+91 80 23186616</a>
               <a href="tel:+918023186579">+91 80 23186579</a>
-            </div>
-          </div>
-
-          <div className="office-detail">
-            <span className="office-icon" aria-hidden="true">
-              <UserRound />
-            </span>
-            <div>
-              <h3>CONTACT PERSON</h3>
-              <p>Souvir Rakshit</p>
-              <a href="tel:+917829958298">Mobile: +91 7829598298</a>
             </div>
           </div>
 
